@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Bagla">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ekipNum" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BaglaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BaglaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KisiKaydet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="soyad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ekipNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bolgeNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="resim" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KisiKaydetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KisiKaydetResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KisiSil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KisiSilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KisiSilResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Guncelle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="soyad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ekipNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bolgeNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="resim" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GuncelleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GuncelleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Listele">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListeleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListeleResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BaglaSoapIn">
+    <wsdl:part name="parameters" element="tns:Bagla" />
+  </wsdl:message>
+  <wsdl:message name="BaglaSoapOut">
+    <wsdl:part name="parameters" element="tns:BaglaResponse" />
+  </wsdl:message>
+  <wsdl:message name="KisiKaydetSoapIn">
+    <wsdl:part name="parameters" element="tns:KisiKaydet" />
+  </wsdl:message>
+  <wsdl:message name="KisiKaydetSoapOut">
+    <wsdl:part name="parameters" element="tns:KisiKaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="KisiSilSoapIn">
+    <wsdl:part name="parameters" element="tns:KisiSil" />
+  </wsdl:message>
+  <wsdl:message name="KisiSilSoapOut">
+    <wsdl:part name="parameters" element="tns:KisiSilResponse" />
+  </wsdl:message>
+  <wsdl:message name="GuncelleSoapIn">
+    <wsdl:part name="parameters" element="tns:Guncelle" />
+  </wsdl:message>
+  <wsdl:message name="GuncelleSoapOut">
+    <wsdl:part name="parameters" element="tns:GuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListeleSoapIn">
+    <wsdl:part name="parameters" element="tns:Listele" />
+  </wsdl:message>
+  <wsdl:message name="ListeleSoapOut">
+    <wsdl:part name="parameters" element="tns:ListeleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="Bagla">
+      <wsdl:input message="tns:BaglaSoapIn" />
+      <wsdl:output message="tns:BaglaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KisiKaydet">
+      <wsdl:input message="tns:KisiKaydetSoapIn" />
+      <wsdl:output message="tns:KisiKaydetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KisiSil">
+      <wsdl:input message="tns:KisiSilSoapIn" />
+      <wsdl:output message="tns:KisiSilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Guncelle">
+      <wsdl:input message="tns:GuncelleSoapIn" />
+      <wsdl:output message="tns:GuncelleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Listele">
+      <wsdl:input message="tns:ListeleSoapIn" />
+      <wsdl:output message="tns:ListeleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Bagla">
+      <soap:operation soapAction="http://tempuri.org/Bagla" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KisiKaydet">
+      <soap:operation soapAction="http://tempuri.org/KisiKaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KisiSil">
+      <soap:operation soapAction="http://tempuri.org/KisiSil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Guncelle">
+      <soap:operation soapAction="http://tempuri.org/Guncelle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listele">
+      <soap:operation soapAction="http://tempuri.org/Listele" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Bagla">
+      <soap12:operation soapAction="http://tempuri.org/Bagla" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KisiKaydet">
+      <soap12:operation soapAction="http://tempuri.org/KisiKaydet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KisiSil">
+      <soap12:operation soapAction="http://tempuri.org/KisiSil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Guncelle">
+      <soap12:operation soapAction="http://tempuri.org/Guncelle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listele">
+      <soap12:operation soapAction="http://tempuri.org/Listele" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://localhost:51382/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://localhost:51382/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

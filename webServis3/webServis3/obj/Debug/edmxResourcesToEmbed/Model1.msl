@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="isgModelStoreContainer" CdmEntityContainer="isgEntities">
+    <EntitySetMapping Name="ekiplers">
+      <EntityTypeMapping TypeName="isgModel.ekipler">
+        <MappingFragment StoreEntitySet="ekipler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="ekipNo" ColumnName="ekipNo" />
+          <ScalarProperty Name="bolgeNo" ColumnName="bolgeNo" />
+          <ScalarProperty Name="resim" ColumnName="resim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

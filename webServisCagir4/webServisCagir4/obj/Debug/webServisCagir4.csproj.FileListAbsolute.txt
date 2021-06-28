@@ -1,0 +1,9 @@
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\bin\Debug\webServisCagir4.exe.config
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\bin\Debug\webServisCagir4.exe
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\bin\Debug\webServisCagir4.pdb
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\obj\Debug\webServisCagir4.csprojResolveAssemblyReference.cache
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\obj\Debug\webServisCagir4.Form1.resources
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\obj\Debug\webServisCagir4.Properties.Resources.resources
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\obj\Debug\webServisCagir4.csproj.GenerateResource.Cache
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\obj\Debug\webServisCagir4.exe
+c:\users\ayse\documents\visual studio 2015\Projects\webServisCagir4\webServisCagir4\obj\Debug\webServisCagir4.pdb
